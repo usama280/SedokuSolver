@@ -42,6 +42,7 @@ def solve(puzzle):
 		puzzle[row][col] = -1
 	return False
 
+
 def print_board(board):
 	for i in range(len(board)):
 		print()
@@ -53,6 +54,7 @@ def print_board(board):
 				print(board[i][j-1], end=' | ')
 			else:
 				print(board[i][j-1], end=' ')
+	print()
 
 
 
@@ -71,5 +73,5 @@ example_board = [
     ]
 
 print(solve(example_board))
-print(print_board(example_board))
+print_board(example_board)
 
